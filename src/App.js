@@ -19,7 +19,7 @@ class App extends Component {
             .catch(error => console.log(error))
     }
 
-    movieClicked = movie => {
+    loadMovie = movie => {
         this.setState({selectedMovie: movie})
     }
 
@@ -28,8 +28,8 @@ class App extends Component {
             <div className="App">
                 <h1>Movie Rater</h1>
                 <div className="layout">
-                    <MovieList movies={this.state.movies} movieClicked={this.movieClicked}/>
-                    <MovieDetails movie={this.state.selectedMovie}/>
+                    <MovieList movies={this.state.movies} movieClicked={this.loadMovie}/>
+                    <MovieDetails movie={this.state.selectedMovie} updateMovie={this.loadMovie}/>
                 </div>
 
             </div>

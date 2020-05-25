@@ -1,9 +1,31 @@
 .App {
-  padding: 50px;
+    padding: 50px;
 }
 
-.layout{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  text-align: left;
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+}
+
+.orange {
+    color: orange;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.purple {
+    color: purple;
+}
+
+.rate-container{
+    margin-top: 10px;
+    border-top:2px solid purple;
+}
+
+.rate-container span.fa{
+    font-size: 2em;
+    cursor: pointer;
 }

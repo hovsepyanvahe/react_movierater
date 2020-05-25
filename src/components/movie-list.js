@@ -8,7 +8,7 @@ const MovieList = (props) => {
     return (
         <div>
             {props.movies.map(movie =>
-                <h3 key={movie.id} onClick={movieClicked(movie)}>{movie.name}</h3>
+                <h3 key={movie.id} className="pointer" onClick={movieClicked(movie)}>{movie.name}</h3>
             )}
         </div>
     )
